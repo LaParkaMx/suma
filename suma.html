@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suma</title>
+    <script>
+    function calcularsuma(){
+        alert ("funcion calcular suma");
+        var n1, n2, n3, total;
+        n1=parseFloat(document.getElementById("txt_num1").value)
+        n2=parseFloat(document.getElementById("txt_num2").value)
+        n3=parseFloat(document.getElementById("txt_num3").value)
+        total = n1 + n2 + n3;
+        document.getElementById("txt_res").value = total
+    }
+    </script>
+</head>
+<body>
+    <form name="frm_total">
+        <input type = "text" name="txt_n1" placeholder="num1" id="txt_num1"><br>
+        <input type = "text" name="txt_n2" placeholder="num2" id="txt_num2"><br>
+        <input type = "text" name="txt_n3" placeholder="num3" id="txt_num3"><br>
+        <input type = "text" name="txt_res" placeholder="resultado" id="txt_res">
+        <input type = "button" value="c.suma" onclick="calcularsuma()">
+    </form>
+</body>
+</html>
